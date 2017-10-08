@@ -1,0 +1,56 @@
+/*main styles the overall box and sets font-size:0 so inline-block have no space between them*/
+
+main {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  font-size: 0;
+}
+
+/*common styles for all five boxes*/
+
+div {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+/*top and bottom are classes that define the common characteristics of the top and bottom row respectively*/
+
+.top {
+  width: 50%;
+  height: 200px;
+}
+
+.bottom {
+  width: 33.3%;
+  height: 300px;
+}
+
+/*these classes apply the colors to the boxes*/
+
+.one {
+  background-color: green;}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: gray;
+}
+
+.four {
+  background-color: black;
+}
+
+.five {
+  background-color: orange;
+}
+
+
+
+
+
+
+
+
