@@ -1,1 +1,69 @@
+/*I thought position: cover would cause the image to always cover the whole viewport, but in only adjusts the width to cover, not the height*/
 
+body {
+  font-family: sans-serif;
+  background-image: url("../images/outerspace_landscape.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Creates Nav bar.  Gray background wtih 100 viewport width.  Fixed so it remains at the top.*/
+
+nav {
+  background-color: gray;
+  padding: 0px 60px 0px 60px;
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+}
+
+/*Change li to inline so they are horizontal.  Add padding to space them out.  Remove styling.*/
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 0px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/*Moves the Nav elements down from the top and moves them to the right to avoid cat logo*/
+
+ul {
+  margin: 35px 0 0 100px;
+}
+
+/*Positions the cat logo and gives in a round border*/
+
+nav img {
+  position: absolute;
+  left: 60px;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 100px;
+}
+
+/*Formats the dotted box.  Used relative so that I could use top and bottom to position it.  Not sure if i could have done that with margins or padding too*/
+
+.box {
+  width: 600px;
+  height: 300px;
+  border: 10px green dotted;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  margin: auto;
+}
+
+/*Since the containing div.box is position relative, using positin relative here should position them relative to the box.  I can then use top and bottom to move them around relative to the box. */ 
+
+.dog {
+  position: relative;
+  top: 200px;
+  left: 200px
+}
+
+.cat {
+  position: relative;
+  top: -100px;
+  left: -50px;
+}
